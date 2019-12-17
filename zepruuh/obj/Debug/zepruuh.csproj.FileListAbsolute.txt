@@ -1,0 +1,10 @@
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\zepruuh.exe.config
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\zepruuh.exe
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\zepruuh.pdb
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.csprojAssemblyReference.cache
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Properties.Resources.resources
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.GenerateResource.cache
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.exe
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.pdb
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.SignIn.resources
+D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.SignUp.resources

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,6 +48,8 @@
             this.textBox1.Size = new System.Drawing.Size(283, 45);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Login";
+            this.textBox1.Enter += new System.EventHandler(this.tb_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.tb_Leave);
             // 
             // textBox2
             // 
@@ -58,6 +61,8 @@
             this.textBox2.Size = new System.Drawing.Size(219, 45);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Password";
+            this.textBox2.Enter += new System.EventHandler(this.tb_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.tb_Leave);
             // 
             // button1
             // 
@@ -70,6 +75,8 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Войти";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Enter += new System.EventHandler(this.tb_Enter);
+            this.button1.Leave += new System.EventHandler(this.tb_Leave);
             // 
             // button2
             // 
@@ -86,12 +93,15 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(252, 83);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button3
             // 
@@ -122,6 +132,7 @@
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Окно входа";
+            this.Shown += new System.EventHandler(this.SignIn_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

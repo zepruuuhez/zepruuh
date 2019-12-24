@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace zepruuh
 {
@@ -29,7 +30,7 @@ namespace zepruuh
         private void tb_Enter(object sender, EventArgs e)
         {
             TextBox tb = sender as TextBox;
-            if (tb.Text == "Login" || tb.Text == "Password" )
+            if (tb.Text == "Login or E-mail" || tb.Text == "Password" )
             {
                 tb.Text = "";
                 tb.ForeColor = Color.Black;
@@ -40,7 +41,7 @@ namespace zepruuh
         {
             if (textBox1.Text == "")
             {
-                textBox1.Text = "Login";
+                textBox1.Text = "Login or E-mail";
                 textBox1.ForeColor = Color.DarkGray;
 
             }
@@ -73,6 +74,52 @@ namespace zepruuh
         private void SignIn_Shown(object sender, EventArgs e)
         {
             button1.Focus();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Login or E-mail" || textBox2.Text == "Password")
+            {
+                MessageBox.Show("Ошибка");
+            }
+            else
+            {
+                bool access = false;
+                string UserLoginEmail = textBox1.Text, UserPassword = textBox2.Text;
+                int number = textBox1.Text.IndexOf('@'),LoginOrEmail;
+                if(number == -1)
+                {
+                    LoginOrEmail = 0;
+                }
+                else
+                {
+                    LoginOrEmail = 2;
+                }
+                using (StreamReader sr = new StreamReader("Users/UsersInfo.txt"))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        string[] tmp = sr.ReadLine().Split(',');
+                        if (UserLoginEmail == tmp[LoginOrEmail] && UserPassword == tmp[1])
+                        {
+                            MessageBox.Show("Вы успешно авторизовались", "Авторизация успешна",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            access = true;
+
+                            Form main = new Main(UserLoginEmail,tmp[3]);
+                            main.Show();
+                            this.Hide();
+                            break;
+                        }
+                    }
+                }
+                if (!access)
+                {
+                    MessageBox.Show("Неверный логин/e-mail или пароль", "Ошибка авторизации",
+                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
         }
     }
 }

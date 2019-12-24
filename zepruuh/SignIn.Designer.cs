@@ -47,7 +47,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(283, 45);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Login";
+            this.textBox1.Text = "Login or E-mail";
             this.textBox1.Enter += new System.EventHandler(this.tb_Enter);
             this.textBox1.Leave += new System.EventHandler(this.tb_Leave);
             // 
@@ -75,6 +75,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Войти";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.Enter += new System.EventHandler(this.tb_Enter);
             this.button1.Leave += new System.EventHandler(this.tb_Leave);
             // 

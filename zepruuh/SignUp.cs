@@ -103,6 +103,8 @@ namespace zepruuh
                     {
                         MessageBox.Show("Данный электронный адрес уже используется", "Ошибка при регистрации",
                                          MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        IsExists = true;
+                        break;
                     }
                 }
                 sr.Close();

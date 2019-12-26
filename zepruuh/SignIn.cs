@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net.Mail;
 
 namespace zepruuh
 {
@@ -86,14 +87,15 @@ namespace zepruuh
             {
                 bool access = false;
                 string UserLoginEmail = textBox1.Text, UserPassword = textBox2.Text;
-                int number = textBox1.Text.IndexOf('@'),LoginOrEmail;
-                if(number == -1)
+                int LoginOrEmail = 0;
+                try
+                {
+                    MailAddress addr = new MailAddress(textBox1.Text);
+                    LoginOrEmail = 2;
+                }
+                catch 
                 {
                     LoginOrEmail = 0;
-                }
-                else
-                {
-                    LoginOrEmail = 2;
                 }
                 using (StreamReader sr = new StreamReader("Users/UsersInfo.txt"))
                 {
@@ -120,6 +122,12 @@ namespace zepruuh
                 }
             }
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form FP = new ForgotPassword();
+            FP.Show();
         }
     }
 }

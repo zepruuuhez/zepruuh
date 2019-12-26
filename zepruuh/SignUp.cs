@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net;
+using System.Net.Mail;
 
 namespace zepruuh
 {
@@ -87,25 +89,37 @@ namespace zepruuh
         {
             if (textBox1.Text != "Login" && textBox2.Text != "Password" && textBox3.Text != "E-mail")
             {
-                bool IsExists = false;
+                    bool IsExists = false;
+                
                 StreamReader sr = new StreamReader("Users/UsersInfo.txt", Encoding.Default);
                 while (!sr.EndOfStream)
                 {
                     string[] tmp = sr.ReadLine().Split(',');
-                    if (tmp[0] == textBox1.Text)
+                    try
                     {
-                        MessageBox.Show("Данное имя пользователя уже занято", "Ошибка при регистрации",
-                                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        IsExists = true;
-                        break;
+                        MailAddress addr = new MailAddress(textBox3.Text);
+                        if (tmp[0] == textBox1.Text)
+                        {
+                            MessageBox.Show("Данное имя пользователя уже занято", "Ошибка при регистрации",
+                                             MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            IsExists = true;
+                            break;
+                        }
+                        else if (tmp[2] == textBox3.Text)
+                        {
+                            MessageBox.Show("Данный электронный адрес уже используется", "Ошибка при регистрации",
+                                             MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            IsExists = true;
+                            break;
+                        }
                     }
-                    else if (tmp[2] == textBox3.Text)
+                    catch
                     {
-                        MessageBox.Show("Данный электронный адрес уже используется", "Ошибка при регистрации",
-                                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        IsExists = true;
-                        break;
+                        MessageBox.Show("Электронный адрес введен не верно", "Ошибка при регистрации",
+                                             MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        IsExists = true; break;
                     }
+                    
                 }
                 sr.Close();
                 if (!IsExists)
@@ -124,5 +138,6 @@ namespace zepruuh
                                         MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

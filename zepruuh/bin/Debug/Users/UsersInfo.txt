@@ -1,4 +1,4 @@
-admin,admin,admin@admin.admin,a
-ilya,zpr,yalputailya2004@mail.ru,u
-zepruuuh_ez,ilyayalputa2004,yalputailya2004@mail.ru,u
-hgfhfghgf,hgfhgfhfg,Zepruuh@mail.ru,u
+admin,admin,admin@admin.admin,a,False
+ilya,zpr,yalputailya2004@mail.ru,u,False
+zepruuuh_ez,ilyayalputa2004,yalputailya2004@mail.ru,u,False
+hgfhfghgf,hgfhgfhfg,Zepruuh@mail.ru,u,False

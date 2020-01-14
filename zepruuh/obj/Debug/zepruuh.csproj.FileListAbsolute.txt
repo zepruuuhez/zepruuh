@@ -10,3 +10,4 @@ D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug
 D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.SignUp.resources
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Main.resources
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.ForgotPassword.resources
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Maze.resources

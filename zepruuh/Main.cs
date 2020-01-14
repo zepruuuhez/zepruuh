@@ -33,6 +33,13 @@ namespace zepruuh
                 label1.Text = "Добро пожаловать";
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form maze = new Maze();
+            maze.Show();
+            this.Hide();
+        }
+
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

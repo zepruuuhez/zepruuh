@@ -129,5 +129,12 @@ namespace zepruuh
             Form FP = new ForgotPassword();
             FP.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Form main = new Main("Хацкер","a");
+            main.Show();
+            this.Hide();
+        }
     }
 }

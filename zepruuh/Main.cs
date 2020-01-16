@@ -40,6 +40,13 @@ namespace zepruuh
             this.Hide();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form graph = new graph();
+            graph.Show();
+            this.Hide();
+        }
+
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

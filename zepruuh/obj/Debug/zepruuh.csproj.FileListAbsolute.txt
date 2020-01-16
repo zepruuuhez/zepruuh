@@ -11,3 +11,4 @@ D:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Main.resources
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.ForgotPassword.resources
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Maze.resources
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.graph.resources

@@ -12,3 +12,18 @@ d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.ForgotPassword.resources
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Maze.resources
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.graph.resources
+C:\Зерпух\zepruuh\zepruuh\bin\Debug\zepruuh.exe.config
+C:\Зерпух\zepruuh\zepruuh\bin\Debug\zepruuh.exe
+C:\Зерпух\zepruuh\zepruuh\bin\Debug\zepruuh.pdb
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.csprojAssemblyReference.cache
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.ForgotPassword.resources
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.graph.resources
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.Main.resources
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.Maze.resources
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.SignIn.resources
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.Properties.Resources.resources
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.SignUp.resources
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.GenerateResource.cache
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.CoreCompileInputs.cache
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.exe
+C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.pdb

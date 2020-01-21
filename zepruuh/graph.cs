@@ -114,5 +114,106 @@ namespace zepruuh
             gr.FillEllipse(Brushes.Black, 10, 10, 300, 300);
             gr.FillEllipse(Brushes.White, -60, 10, 300, 300);
         }
+        int alpha = 255, BlackCordX = -255;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            BlackCordX++;
+            pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            Graphics gr = Graphics.FromImage(pictureBox1.Image);
+            if (BlackCordX >= -157 && BlackCordX < 98)
+            {
+                alpha--;
+            }
+            else if (BlackCordX > 98 && alpha < 255)
+            {
+                alpha++;
+            }
+            gr.FillRectangle(Brushes.Black, 0, 0, 470, 470);
+            Brush br = new SolidBrush(Color.FromArgb(alpha, 0, 191, 255));
+            gr.FillRectangle(br, 0, 0, 470, 470);
+            GraphicsPath path = new GraphicsPath();
+            path.AddEllipse(98, 98, 255, 255);
+            PathGradientBrush brush = new PathGradientBrush(path);
+            brush.CenterColor = Color.Red;
+            Color[] colors = { Color.Yellow };
+            brush.SurroundColors = colors;
+            gr.FillEllipse(brush, 98, 98, 255, 255);
+            gr.FillEllipse(Brushes.Black, BlackCordX, 98, 255, 255);
+            if (BlackCordX > 470)
+            {
+                BlackCordX = -255; alpha = 255;
+            }
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                timer1.Enabled = false;
+            }
+            else if (!timer1.Enabled)
+            {
+                timer1.Enabled = true;
+            }
+        }
+            float SunX = 135F, SunY = 50F, MoonY = 470F;
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SunX = 135F; SunY = 50F;
+            alpha2 = 255; MoonY = 470F;
+            timer2.Enabled = true;
+
+        }
+        int alpha2 = 255;
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            SunY += 1.647F;
+            if (alpha2 > 0)
+            {
+                alpha2--;
+            }
+            pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            Graphics gr = Graphics.FromImage(pictureBox1.Image);
+            gr.FillRectangle(Brushes.Black, 0, 0, 470, 470);
+            Brush br = new SolidBrush(Color.FromArgb(alpha2, 0, 191, 255));
+            gr.FillRectangle(br, 0, 0, 470, 470);
+            GraphicsPath path = new GraphicsPath();
+            path.AddEllipse(SunX, SunY, 200, 200);
+            PathGradientBrush brush = new PathGradientBrush(path);
+            brush.CenterColor = Color.Red;
+            Color[] colors = { Color.Yellow };
+            brush.SurroundColors = colors;
+            gr.FillEllipse(brush, SunX, SunY, 200, 200);
+            gr.FillEllipse(Brushes.DarkGreen, -70, 400, 290, 290);//Холм сзади
+            gr.FillEllipse(Brushes.DarkGreen, 185, 380, 295, 295);
+            Brush brholm = new SolidBrush(Color.FromArgb(alpha2, 119, 221, 119));
+            gr.FillEllipse(brholm, -70, 400, 290, 290); //Холм спереди
+            gr.FillEllipse(brholm, 185, 380, 295, 295);
+            if (SunY > 470)
+            {
+                if(MoonY > 50)
+                {
+                    MoonY-= 1.647F;
+                    GraphicsPath pathMoon = new GraphicsPath();
+                    pathMoon.AddEllipse(135, MoonY, 200, 200);
+                    PathGradientBrush brushMoon = new PathGradientBrush(pathMoon);
+                    brushMoon.CenterColor = Color.White;
+                    Color[] colorsMoon = { Color.Gray };
+                    brushMoon.SurroundColors = colorsMoon;
+                    gr.FillEllipse(brushMoon, 135, MoonY, 200, 200); // ЛУНА
+                }
+            }
+            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            alpha = 255;BlackCordX = -255;
+            timer1.Enabled = true;
+
+
+        }
     }
 }

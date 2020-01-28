@@ -47,6 +47,13 @@ namespace zepruuh
             this.Hide();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form u = new upr();
+            u.Show();
+            this.Hide();
+        }
+
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

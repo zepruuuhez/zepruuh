@@ -27,3 +27,4 @@ C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.GenerateResource.cache
 C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.CoreCompileInputs.cache
 C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.exe
 C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.pdb
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.upr.resources

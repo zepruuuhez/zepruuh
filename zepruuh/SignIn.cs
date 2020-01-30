@@ -31,11 +31,7 @@ namespace zepruuh
         private void tb_Enter(object sender, EventArgs e)
         {
             TextBox tb = sender as TextBox;
-            if (tb.Text == "Login or E-mail" || tb.Text == "Password" )
-            {
-                tb.Text = "";
-                tb.ForeColor = Color.Black;
-            }
+            
         }
 
         private void tb_Leave(object sender, EventArgs e)

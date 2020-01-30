@@ -28,3 +28,18 @@ C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.CoreCompileInputs.cache
 C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.exe
 C:\Зерпух\zepruuh\zepruuh\obj\Debug\zepruuh.pdb
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.upr.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\bin\Debug\zepruuh.exe.config
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\bin\Debug\zepruuh.exe
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\bin\Debug\zepruuh.pdb
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.csprojAssemblyReference.cache
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.ForgotPassword.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.graph.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.Main.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.Maze.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.SignIn.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.Properties.Resources.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.SignUp.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.upr.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.GenerateResource.cache
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.exe
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.pdb

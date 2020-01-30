@@ -59,16 +59,48 @@ namespace zepruuh
             richTextBox1.Text = "";
             int first = Convert.ToInt32(textBox1.Text);
             int second = Convert.ToInt32(textBox2.Text);
-            for (int i =first; i <= second;i++)
-            {                
-                richTextBox1.Text += i + " ";
+            if (first < second)
+            {
+                for (int i = first; i <= second; i++)
+                {
+                    richTextBox1.Text += i + " ";
+                }
+            }
+            else if (first > second)
+            {
+                for (int i = first; i >= second; i--)
+                {
+                    richTextBox1.Text += i + " ";
+                }
             }
             
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            richTextBox1.Text = "";richTextBox2.Text = "";
             int[] arr = new int[10];
+            R = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                arr[i] = R.Next(10, 100);
+                richTextBox1.Text += arr[i] + " ";
+            }
+            for (int i = 0; i < 10 - 1; i++)
+            {
+                for ( int j = 0; j < 10-1;j++)
+                {
+                    if (arr[j] > arr[j+1])
+                    {
+                        int tmp = arr[j];
+                        arr[j] = arr[j + 1];
+                        tmp = arr[j + 1];
+                        richTextBox2.Text += arr[i] + " ";
+                    }
+                }
+                
+            }
+            
 
         }
 

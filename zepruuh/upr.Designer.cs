@@ -85,7 +85,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(544, 165);
+            this.button2.Location = new System.Drawing.Point(343, 160);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(258, 38);
             this.button2.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(524, 209);
+            this.richTextBox2.Location = new System.Drawing.Point(343, 209);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(258, 236);
             this.richTextBox2.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(788, 209);
+            this.richTextBox3.Location = new System.Drawing.Point(616, 209);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(205, 236);
             this.richTextBox3.TabIndex = 7;
@@ -111,9 +111,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(808, 165);
+            this.button3.Location = new System.Drawing.Point(616, 165);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(258, 38);
+            this.button3.Size = new System.Drawing.Size(205, 38);
             this.button3.TabIndex = 8;
             this.button3.Text = "5упр";
             this.button3.UseVisualStyleBackColor = true;
@@ -133,7 +133,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1091, 506);
+            this.ClientSize = new System.Drawing.Size(1091, 525);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox3);
@@ -145,7 +145,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "upr";
             this.Text = "upr";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.upr_FormClosing);

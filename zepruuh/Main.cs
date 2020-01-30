@@ -54,6 +54,13 @@ namespace zepruuh
             this.Hide();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form alg = new Algoritm();
+            alg.Show();
+            this.Hide();
+        }
+
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

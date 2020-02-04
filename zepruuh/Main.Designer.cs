@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +73,16 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Задачи";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(25, 169);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(347, 46);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Алгоритм";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -113,16 +123,6 @@
             this.button3.Text = "Graphics";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(25, 169);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(347, 46);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Алгоритм";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Main
             // 

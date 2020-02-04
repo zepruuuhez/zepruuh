@@ -44,3 +44,4 @@ C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.Generat
 C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.exe
 C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.pdb
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Algoritm.resources
+C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.Algoritm.resources

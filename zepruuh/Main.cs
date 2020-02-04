@@ -66,6 +66,13 @@ namespace zepruuh
 
         }
 
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Form five = new fifteen();
+            five.Show();
+            this.Hide();
+        }
+
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

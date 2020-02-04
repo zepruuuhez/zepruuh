@@ -53,6 +53,12 @@
     <Compile Include="Algoritm.Designer.cs">
       <DependentUpon>Algoritm.cs</DependentUpon>
     </Compile>
+    <Compile Include="fifteen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fifteen.Designer.cs">
+      <DependentUpon>fifteen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </Compile>
     <EmbeddedResource Include="Algoritm.resx">
       <DependentUpon>Algoritm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fifteen.resx">
+      <DependentUpon>fifteen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>

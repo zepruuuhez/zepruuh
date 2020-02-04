@@ -49,23 +49,32 @@ namespace zepruuh
              * Получить кол-во покупок За день
              * 
              */
+            richTextBox2.Text = "";
             double N = Convert.ToDouble(textBox4.Text),
                 P = Convert.ToDouble(textBox5.Text),
                 NumM ,
                 z,
                 NumP = 0;
-            for (int i = 1; i < N; i++)
+            for (int i = 1; i <= N; i++)
             {
                 NumM = R.Next(1, 20);
-                for (int j = 1; j < NumM; j++)
+                NumP = 0;
+                for (int j = 1; j <= NumM; j++)
                 {
                     z = R.NextDouble();
                     if (z < P)
                     {
-                        NumP = NumP + 1;
+                        NumP++;
                     }
                 }
+                richTextBox2.Text += "На " + i + " горке было "+ NumM+ " детей. Смогли " +
+                    "съехать "+NumP+" детей\n";
             }
+        }
+
+        private void Algoritm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

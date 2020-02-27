@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
+using System.Data.SQLite;
 
 namespace zepruuh
 {
@@ -84,11 +85,33 @@ namespace zepruuh
                 pictureBox1.Image = Image.FromFile("Images/opened.jpg");
             }
         }
-
+                SQLiteConnection connection = new SQLiteConnection(@"DataSource=Users/Users.db;Version=3;");
+                SQLiteCommand command = new SQLiteCommand();
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "Login" && textBox2.Text != "Password" && textBox3.Text != "E-mail")
             {
+                command.Connection = connection;
+                connection.Open();
+                command.CommandText = "SELECT count(*)" +
+                    " FROM Users WHERE login = '" + textBox1.Text + "'" 
+                    + " OR email = '" + textBox3.Text + "'"; 
+                string chislo = command.ExecuteScalar().ToString();
+                command.Reset();
+                if (chislo == "0")
+                {
+                    command.CommandText = "Insert into Users (login,email,password) Values('" + textBox1.Text + "','" + textBox3.Text + "','" + textBox2.Text + "')";
+                    command.ExecuteNonQuery();
+                }
+                else
+                {
+                    MessageBox.Show("Данное Логин/email уже зарегистрировано другим пользователем",
+                        "Ошибка регистрации", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                command.Reset();
+                connection.Close();
+
+                /*
                     bool IsExists = false;
                 
                 StreamReader sr = new StreamReader("Users/UsersInfo.txt", Encoding.Default);
@@ -130,7 +153,7 @@ namespace zepruuh
                                          MessageBoxButtons.OK, MessageBoxIcon.Information);
                     sw.Close();
                     this.Close();
-                }
+                }*/
             }
             else
             {

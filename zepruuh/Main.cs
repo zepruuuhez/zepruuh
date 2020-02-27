@@ -73,6 +73,27 @@ namespace zepruuh
             this.Hide();
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form db = new database();
+            db.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form adm = new admin();
+            adm.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form dgv = new dgv();
+            dgv.Show();
+            this.Hide();
+        }
+
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

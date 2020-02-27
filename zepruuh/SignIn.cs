@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net.Mail;
+using System.Data.SQLite;
 
 namespace zepruuh
 {
@@ -93,28 +94,50 @@ namespace zepruuh
                 {
                     LoginOrEmail = 0;
                 }
-                using (StreamReader sr = new StreamReader("Users/UsersInfo.txt"))
+                finally
                 {
-                    while (!sr.EndOfStream)
+                    SQLiteConnection conn = new SQLiteConnection(@"DataSource=Users/Users.db;Version=3");
+                    SQLiteCommand cmd = new SQLiteCommand();
+                    cmd.Connection = conn;
+                    conn.Open();
+                    if (LoginOrEmail == 0)
                     {
-                        string[] tmp = sr.ReadLine().Split(',');
-                        if (UserLoginEmail == tmp[LoginOrEmail] && UserPassword == tmp[1])
+                        cmd.CommandText = "SELECT * FROM Users WHERE login = '" + textBox1.Text + "'"+
+                            " AND password = '"+ textBox2.Text  +"'";
+                    }
+                    else
+                    {
+                        cmd.CommandText = "SELECT * FROM Users WHERE email = '" + textBox1.Text + "'" +
+                            " AND password = '" + textBox2.Text + "'";
+                    }
+                    SQLiteDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        string log = reader.GetValue(1).ToString(),
+                                rights = reader.GetValue(4).ToString(),
+                                banned = reader.GetValue(5).ToString();
+                        if (banned == "False")
                         {
-                            MessageBox.Show("Вы успешно авторизовались", "Авторизация успешна",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            access = true;
 
-                            Form main = new Main(UserLoginEmail,tmp[3]);
+                            MessageBox.Show("Вы успешно авторизовались", "Авторизация успешна",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Form main = new Main(log, rights);
                             main.Show();
                             this.Hide();
-                            break;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Извините, но ваша учётная запись была заблокиована","Авторизация невозможна",MessageBoxButtons.OK);
                         }
                     }
-                }
-                if (!access)
-                {
-                    MessageBox.Show("Неверный логин/e-mail или пароль", "Ошибка авторизации",
-                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        MessageBox.Show("Неверный логин/e-mail или пароль", "Ошибка авторизации",
+                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    
+
+                    conn.Close();
                 }
             }
             
@@ -123,10 +146,10 @@ namespace zepruuh
         private void button3_Click(object sender, EventArgs e)
         {
             Form FP = new ForgotPassword();
-            FP.Show();
+            FP.Show(); 
         }
-
-        private void label1_Click(object sender, EventArgs e)
+         
+        private void label1_Click(object sender, EventArgs e) 
         {
             Form main = new Main("Хацкер","a");
             main.Show();

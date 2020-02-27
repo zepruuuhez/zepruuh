@@ -46,3 +46,16 @@ C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.pdb
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.Algoritm.resources
 C:\Users\ilyay\Documents\GitHub\zepruuh\zepruuh\obj\Debug\zepruuh.Algoritm.resources
 d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.fifteen.resources
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\EntityFramework.dll
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\EntityFramework.SqlServer.dll
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\System.Data.SQLite.dll
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\System.Data.SQLite.EF6.dll
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\System.Data.SQLite.Linq.dll
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\EntityFramework.xml
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\EntityFramework.SqlServer.xml
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\System.Data.SQLite.xml
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\bin\Debug\System.Data.SQLite.dll.config
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.database.resources
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.csproj.CopyComplete
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.admin.resources
+d:\Рабочий стол\Ялпута проекты\zepruuh\zepruuh\obj\Debug\zepruuh.dgv.resources
